@@ -1,0 +1,35 @@
+NAME
+    Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line
+    endings are used
+
+VERSION
+    version 0.03
+
+DESCRIPTION
+    This is an extension of Dist::Zilla::Plugin::InlineFiles, providing the
+    following files:
+
+ATTRIBUTES
+  trailing_whitespace
+    If this option is set to a true value, "{ trailing_whitespace => 1 }"
+    will be passed to "all_perl_files_ok" in Test::EOL. It defaults to 1.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://github.com/rafl/dist-zilla-plugin-eoltests/issues
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHORS
+    *   Florian Ragwitz <rafl@debian.org>
+
+    *   Caleb Cushing <xenoterracide@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2011 by Caleb Cushing.
+
+    This is free software, licensed under:
+
+      The Artistic License 2.0 (GPL Compatible)
+

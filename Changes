@@ -1,0 +1,15 @@
+Revision history for Dist-Zilla-Plugin-Test-EOL
+
+0.03      2011-12-11
+	- Fork from Dist::Zilla::Plugin::EOLTests
+	- make an author test
+	- new standard ::Test namespace
+	- use Test::Requires
+
+0.02	2010-06-03
+	- Allow checking for trailing whitespace.
+	  This is enabled by default, but can be turned off with
+	  trailing_whitespace = 0.
+
+0.01	2010-05-29
+	- Split off of Dist::Zilla::Plugin::SanityTests.
