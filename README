@@ -3,9 +3,11 @@ NAME
     endings are used
 
 VERSION
-    version 0.03
+    version 0.04
 
 DESCRIPTION
+    Generate an author Test::EOL.
+
     This is an extension of Dist::Zilla::Plugin::InlineFiles, providing the
     following files:
 
@@ -14,12 +16,26 @@ ATTRIBUTES
     If this option is set to a true value, "{ trailing_whitespace => 1 }"
     will be passed to "all_perl_files_ok" in Test::EOL. It defaults to 1.
 
+ACKNOWLEDGMENTS
+    This module is a fork of Dist::Zilla::Plugin::EOLTests and was
+    originally written by Florian Ragwitz. It was forked because author the
+    Test:: namespace is preferred and because I would prefer to have EOL
+    tests be Author tests.
+
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    https://github.com/rafl/dist-zilla-plugin-eoltests/issues
+    https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-EOL/issues
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.
+
+SEE ALSO
+    Please see those modules/websites for more information related to this
+    module.
+
+    *   Test::EOL
+
+    *   Dist::Zilla::Plugin::EOLTests
 
 AUTHORS
     *   Florian Ragwitz <rafl@debian.org>
@@ -27,7 +43,7 @@ AUTHORS
     *   Caleb Cushing <xenoterracide@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2011 by Caleb Cushing.
+    This software is Copyright (c) 2012 by Caleb Cushing.
 
     This is free software, licensed under:
 
