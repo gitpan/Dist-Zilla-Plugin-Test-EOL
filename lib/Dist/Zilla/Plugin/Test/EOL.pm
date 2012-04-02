@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::Test::EOL;
 use Moose;
 use namespace::autoclean;
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
 with 'Dist::Zilla::Role::TextTemplate';
@@ -44,7 +44,7 @@ Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings a
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 
@@ -128,6 +128,6 @@ ___[ xt/author/test-eol.t ]___
 use strict;
 use warnings;
 use Test::More;
-use Test::Requires qw( Test::EOL );
+use Test::EOL;
 
 all_perl_files_ok({ trailing_whitespace => {{ $trailing_ws }} });

@@ -5,7 +5,6 @@ META.json
 META.yml
 Makefile.PL
 README
-docs/SubmittingPatches.pod
 lib/Dist/Zilla/Plugin/Test/EOL.pm
 perlcritic.rc
 t/00-compile.t
@@ -13,6 +12,7 @@ t/000-report-versions-tiny.t
 t/author-critic.t
 t/author-pod-spell.t
 t/author-test-eol.t
+t/file.t
 t/release-cpan-changes.t
 t/release-dist-manifest.t
 t/release-distmeta.t

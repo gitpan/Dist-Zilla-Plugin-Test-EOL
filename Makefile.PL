@@ -15,8 +15,11 @@ my %WriteMakefileArgs = (
     "English" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
+    "Test::DZil" => 0,
+    "Test::EOL" => 0,
     "Test::More" => "0.88",
     "Test::Requires" => 0,
+    "Test::Script" => "1.05",
     "strict" => 0,
     "warnings" => 0
   },
@@ -31,9 +34,10 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::InlineFiles" => 0,
     "Dist::Zilla::Role::TextTemplate" => 0,
     "Moose" => 0,
+    "Test::EOL" => "1.1",
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
