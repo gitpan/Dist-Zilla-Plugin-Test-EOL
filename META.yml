@@ -8,7 +8,6 @@ build_requires:
   File::Find: 0
   File::Temp: 0
   Test::DZil: 0
-  Test::EOL: 0
   Test::More: 0.88
   Test::Requires: 0
   Test::Script: 1.05
@@ -37,4 +36,4 @@ resources:
   bugtracker: https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-EOL/issues
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-Test-EOL/
   repository: git://github.com/xenoterracide/Dist-Zilla-Plugin-Test-EOL.git
-version: 0.05
+version: 0.06

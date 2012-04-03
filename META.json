@@ -40,7 +40,6 @@
             "File::Find" : "0",
             "File::Temp" : "0",
             "Test::DZil" : "0",
-            "Test::EOL" : "0",
             "Test::More" : "0.88",
             "Test::Requires" : "0",
             "Test::Script" : "1.05",
@@ -62,6 +61,6 @@
          "web" : "https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-EOL"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }
 
