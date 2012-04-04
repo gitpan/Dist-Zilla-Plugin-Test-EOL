@@ -12,7 +12,7 @@ my $v = "\n";
 
 eval {                     # no excuses!
     # report our Perl details
-    my $want = '5.006';
+    my $want = "any version";
     my $pv = ($^V || $]);
     $v .= "perl: $pv (wanted $want) on $^O from $^X\n\n";
 };
@@ -58,7 +58,6 @@ eval { $v .= pmver('Moose','any version') };
 eval { $v .= pmver('Test::DZil','any version') };
 eval { $v .= pmver('Test::EOL','1.1') };
 eval { $v .= pmver('Test::More','0.88') };
-eval { $v .= pmver('Test::Requires','any version') };
 eval { $v .= pmver('Test::Script','1.05') };
 eval { $v .= pmver('namespace::autoclean','any version') };
 eval { $v .= pmver('strict','any version') };

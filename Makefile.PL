@@ -17,7 +17,6 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "Test::DZil" => 0,
     "Test::More" => "0.88",
-    "Test::Requires" => 0,
     "Test::Script" => "1.05",
     "strict" => 0,
     "warnings" => 0
@@ -36,7 +35,7 @@ my %WriteMakefileArgs = (
     "Test::EOL" => "1.1",
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.06",
+  "VERSION" => "0.07",
   "test" => {
     "TESTS" => "t/*.t"
   }
