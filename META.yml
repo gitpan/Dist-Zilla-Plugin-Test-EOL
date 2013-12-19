@@ -35,4 +35,6 @@ resources:
   bugtracker: https://github.com/xenoterracide/dist-zilla-plugin-test-eol/issues
   homepage: https://metacpan.org/dist/Dist-Zilla-Plugin-Test-EOL
   repository: git://github.com/xenoterracide/dist-zilla-plugin-test-eol.git
-version: 0.09
+version: 0.10
+x_contributors:
+  - 'Olivier Mengué <dolmen@cpan.org>'

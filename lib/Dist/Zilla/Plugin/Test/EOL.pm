@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::Test::EOL;
 use Moose;
 use namespace::autoclean;
 
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
 with 'Dist::Zilla::Role::TextTemplate';
@@ -40,13 +40,15 @@ __PACKAGE__->meta->make_immutable;
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings are used
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 DESCRIPTION
 
@@ -96,6 +98,10 @@ L<Test::EOL|Test::EOL>
 L<Dist::Zilla::Plugin::EOLTests|Dist::Zilla::Plugin::EOLTests>
 
 =back
+
+=head1 CONTRIBUTOR
+
+Olivier Mengué <dolmen@cpan.org>
 
 =head1 AUTHORS
 

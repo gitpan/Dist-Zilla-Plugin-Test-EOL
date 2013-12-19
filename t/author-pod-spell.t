@@ -25,6 +25,9 @@ rafl
 Caleb
 Cushing
 xenoterracide
+Olivier
+Mengué
+dolmen
 lib
 Dist
 Zilla

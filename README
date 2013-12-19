@@ -3,7 +3,7 @@ NAME
     endings are used
 
 VERSION
-    version 0.09
+    version 0.10
 
 DESCRIPTION
     Generate an author Test::EOL.
@@ -36,6 +36,9 @@ SEE ALSO
     *   Test::EOL
 
     *   Dist::Zilla::Plugin::EOLTests
+
+CONTRIBUTOR
+    Olivier Mengué <dolmen@cpan.org>
 
 AUTHORS
     *   Florian Ragwitz <rafl@debian.org>

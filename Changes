@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-Plugin-Test-EOL
 
+0.10      2013-12-18
+	- forgot to update encoding and contributors
+
 0.09      2013-12-18
 	- rerelease because of DZP::Test::Compile problem on windows
 
