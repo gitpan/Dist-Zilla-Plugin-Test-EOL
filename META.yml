@@ -4,17 +4,19 @@ author:
   - 'Florian Ragwitz <rafl@debian.org>'
   - 'Caleb Cushing <xenoterracide@gmail.com>'
 build_requires:
+  File::Spec: 0
   IO::Handle: 0
   IPC::Open3: 0
   Test::DZil: 0
   Test::More: 0.88
   Test::Script: 1.05
+  perl: 5.006
   strict: 0
   warnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.132140'
+generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.133380'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -33,4 +35,4 @@ resources:
   bugtracker: https://github.com/xenoterracide/dist-zilla-plugin-test-eol/issues
   homepage: https://metacpan.org/dist/Dist-Zilla-Plugin-Test-EOL
   repository: git://github.com/xenoterracide/dist-zilla-plugin-test-eol.git
-version: 0.08
+version: 0.09
