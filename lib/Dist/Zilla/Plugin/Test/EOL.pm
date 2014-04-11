@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::Test::EOL;
 use Moose;
 use namespace::autoclean;
 
-our $VERSION = '0.10'; # VERSION
+our $VERSION = '0.11'; # VERSION
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
 with 'Dist::Zilla::Role::TextTemplate';
@@ -48,7 +48,7 @@ Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings a
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 DESCRIPTION
 
@@ -65,14 +65,18 @@ If this option is set to a true value,
 C<< { trailing_whitespace => 1 } >> will be passed to
 L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
 
+What this option is going to do is test for the lack of trailing whitespace at
+the end of the lines (also known as "trailing space").
+
 =for :list * xt/author/eol.t
 a standard Test::EOL test
 
 =head1 ACKNOWLEDGMENTS
 
 This module is a fork of L<Dist::Zilla::Plugin::EOLTests> and was originally
-written by Florian Ragwitz. It was forked because author the Test:: namespace
-is preferred and because I would prefer to have EOL tests be Author tests.
+written by Florian Ragwitz. It was forked because the Test:: namespace
+is preferred for test modules, and because I would prefer to have EOL tests
+be Author tests.
 
 =head1 BUGS
 
@@ -99,9 +103,19 @@ L<Dist::Zilla::Plugin::EOLTests|Dist::Zilla::Plugin::EOLTests>
 
 =back
 
-=head1 CONTRIBUTOR
+=head1 CONTRIBUTORS
+
+=over 4
+
+=item *
 
 Olivier Mengué <dolmen@cpan.org>
+
+=item *
+
+Shlomi Fish <shlomif@shlomifish.org>
+
+=back
 
 =head1 AUTHORS
 
@@ -119,7 +133,7 @@ Caleb Cushing <xenoterracide@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013 by Caleb Cushing.
+This software is Copyright (c) 2014 by Caleb Cushing.
 
 This is free software, licensed under:
 

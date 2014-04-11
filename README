@@ -3,7 +3,7 @@ NAME
     endings are used
 
 VERSION
-    version 0.10
+    version 0.11
 
 DESCRIPTION
     Generate an author Test::EOL.
@@ -16,11 +16,14 @@ ATTRIBUTES
     If this option is set to a true value, "{ trailing_whitespace => 1 }"
     will be passed to "all_perl_files_ok" in Test::EOL. It defaults to 1.
 
+    What this option is going to do is test for the lack of trailing
+    whitespace at the end of the lines (also known as "trailing space").
+
 ACKNOWLEDGMENTS
     This module is a fork of Dist::Zilla::Plugin::EOLTests and was
-    originally written by Florian Ragwitz. It was forked because author the
-    Test:: namespace is preferred and because I would prefer to have EOL
-    tests be Author tests.
+    originally written by Florian Ragwitz. It was forked because the Test::
+    namespace is preferred for test modules, and because I would prefer to
+    have EOL tests be Author tests.
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
@@ -37,8 +40,10 @@ SEE ALSO
 
     *   Dist::Zilla::Plugin::EOLTests
 
-CONTRIBUTOR
-    Olivier Mengué <dolmen@cpan.org>
+CONTRIBUTORS
+    *   Olivier Mengué <dolmen@cpan.org>
+
+    *   Shlomi Fish <shlomif@shlomifish.org>
 
 AUTHORS
     *   Florian Ragwitz <rafl@debian.org>
@@ -46,7 +51,7 @@ AUTHORS
     *   Caleb Cushing <xenoterracide@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2013 by Caleb Cushing.
+    This software is Copyright (c) 2014 by Caleb Cushing.
 
     This is free software, licensed under:
 
