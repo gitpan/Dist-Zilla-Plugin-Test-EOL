@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::Test::EOL;
 use Moose;
 use namespace::autoclean;
 
-our $VERSION = '0.11'; # VERSION
+our $VERSION = '0.12'; # VERSION
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
 with 'Dist::Zilla::Role::TextTemplate';
@@ -48,7 +48,7 @@ Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings a
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 DESCRIPTION
 

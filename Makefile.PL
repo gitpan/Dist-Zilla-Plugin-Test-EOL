@@ -25,6 +25,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::InlineFiles" => 0,
     "Dist::Zilla::Role::TextTemplate" => 0,
     "Moose" => 0,
+    "Test::EOL" => "1.1",
     "namespace::autoclean" => 0
   },
   "TEST_REQUIRES" => {
@@ -41,7 +42,7 @@ my %WriteMakefileArgs = (
     "version" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.11",
+  "VERSION" => "0.12",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -60,6 +61,7 @@ my %FallbackPrereqs = (
   "List::Util" => 0,
   "Moose" => 0,
   "Test::DZil" => 0,
+  "Test::EOL" => "1.1",
   "Test::More" => 0,
   "Test::Script" => "1.05",
   "namespace::autoclean" => 0,

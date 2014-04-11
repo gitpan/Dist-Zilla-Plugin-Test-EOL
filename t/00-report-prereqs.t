@@ -62,6 +62,7 @@ my $static_prereqs = do { my $x = {
                                       'Dist::Zilla::Plugin::InlineFiles' => '0',
                                       'Dist::Zilla::Role::TextTemplate' => '0',
                                       'Moose' => '0',
+                                      'Test::EOL' => '1.1',
                                       'namespace::autoclean' => '0'
                                     }
                     },

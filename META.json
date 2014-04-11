@@ -42,6 +42,7 @@
             "Dist::Zilla::Plugin::InlineFiles" : "0",
             "Dist::Zilla::Role::TextTemplate" : "0",
             "Moose" : "0",
+            "Test::EOL" : "1.1",
             "namespace::autoclean" : "0"
          }
       },
@@ -70,7 +71,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::Test::EOL" : {
          "file" : "lib/Dist/Zilla/Plugin/Test/EOL.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       }
    },
    "release_status" : "stable",
@@ -85,7 +86,7 @@
          "web" : "https://github.com/xenoterracide/dist-zilla-plugin-test-eol"
       }
    },
-   "version" : "0.11",
+   "version" : "0.12",
    "x_contributors" : [
       "Olivier Mengué <dolmen@cpan.org>",
       "Shlomi Fish <shlomif@shlomifish.org>"
