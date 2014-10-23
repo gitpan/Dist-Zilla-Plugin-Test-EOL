@@ -153,6 +153,7 @@
             "Path::Tiny" : "0",
             "Test::DZil" : "0",
             "Test::Deep" : "0",
+            "Test::EOL" : "0",
             "Test::More" : "0",
             "if" : "0"
          }
@@ -161,11 +162,11 @@
    "provides" : {
       "Dist::Zilla::Plugin::EOLTests" : {
          "file" : "lib/Dist/Zilla/Plugin/EOLTests.pm",
-         "version" : "0.13"
+         "version" : "0.14"
       },
       "Dist::Zilla::Plugin::Test::EOL" : {
          "file" : "lib/Dist/Zilla/Plugin/Test/EOL.pm",
-         "version" : "0.13"
+         "version" : "0.14"
       }
    },
    "release_status" : "stable",
@@ -183,7 +184,7 @@
       "x_IRC" : "irc://irc.perl.org/#distzilla",
       "x_MailingList" : "http://dzil.org/#mailing-list"
    },
-   "version" : "0.13",
+   "version" : "0.14",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.021005"
@@ -929,7 +930,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "0.13",
+                  "tag" : "0.14",
                   "tag_format" : "%v",
                   "tag_message" : "%v",
                   "time_zone" : "local"
@@ -979,6 +980,11 @@
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::EOL",
+            "config" : {
+               "Dist::Zilla::Plugin::Test::EOL" : {
+                  "filename" : "t/eol.t"
+               }
+            },
             "name" : "Test::EOL",
             "version" : null
          },

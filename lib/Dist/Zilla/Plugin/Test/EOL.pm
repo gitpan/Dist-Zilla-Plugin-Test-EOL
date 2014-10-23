@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 package Dist::Zilla::Plugin::Test::EOL;
-# git description: 0.12-17-g395ea06
-$Dist::Zilla::Plugin::Test::EOL::VERSION = '0.13';
+# git description: 0.13-6-g2cbf661
+$Dist::Zilla::Plugin::Test::EOL::VERSION = '0.14';
 
 use Moose;
 use Sub::Exporter::ForMethods 'method_installer';
@@ -25,8 +25,19 @@ has trailing_whitespace => (
 has filename => (
     is => 'ro', isa => 'Str',
     lazy => 1,
-    default => sub { return 'xt/author/test-eol.t' },
+    default => sub { return 'xt/author/eol.t' },
 );
+
+around dump_config => sub
+{
+    my ($orig, $self) = @_;
+    my $config = $self->$orig;
+
+    $config->{+__PACKAGE__} = {
+         filename => $self->filename,
+    };
+    return $config;
+};
 
 sub gather_files
 {
@@ -119,7 +130,7 @@ Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings a
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 DESCRIPTION
 

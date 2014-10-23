@@ -72,7 +72,7 @@ EOW
         "Karen Etheridge <ether\@cpan.org>"
       ],
       "dist_name" => "Dist-Zilla-Plugin-Test-EOL",
-      "dist_version" => "0.13",
+      "dist_version" => "0.14",
       "license" => "perl",
       "module_name" => "Dist::Zilla::Plugin::Test::EOL",
       "recommends" => {},
@@ -98,6 +98,7 @@ EOW
         "Path::Tiny" => 0,
         "Test::DZil" => 0,
         "Test::Deep" => 0,
+        "Test::EOL" => 0,
         "Test::More" => 0,
         "if" => 0
       }
@@ -111,6 +112,7 @@ EOW
       "Path::Tiny" => 0,
       "Test::DZil" => 0,
       "Test::Deep" => 0,
+      "Test::EOL" => 0,
       "Test::More" => 0,
       "if" => 0
     );

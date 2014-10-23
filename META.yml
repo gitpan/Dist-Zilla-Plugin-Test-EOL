@@ -11,6 +11,7 @@ build_requires:
   Path::Tiny: '0'
   Test::DZil: '0'
   Test::Deep: '0'
+  Test::EOL: '0'
   Test::More: '0'
   if: '0'
 configure_requires:
@@ -30,10 +31,10 @@ no_index:
 provides:
   Dist::Zilla::Plugin::EOLTests:
     file: lib/Dist/Zilla/Plugin/EOLTests.pm
-    version: '0.13'
+    version: '0.14'
   Dist::Zilla::Plugin::Test::EOL:
     file: lib/Dist/Zilla/Plugin/Test/EOL.pm
-    version: '0.13'
+    version: '0.14'
 requires:
   Data::Section: '0.004'
   Dist::Zilla::File::InMemory: '0'
@@ -52,7 +53,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Test-EOL
   homepage: https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-EOL
   repository: https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-EOL.git
-version: '0.13'
+version: '0.14'
 x_Dist_Zilla:
   perl:
     version: '5.021005'
@@ -617,7 +618,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: '0.13'
+          tag: '0.14'
           tag_format: '%v'
           tag_message: '%v'
           time_zone: local
@@ -653,6 +654,9 @@ x_Dist_Zilla:
       version: '5.021'
     -
       class: Dist::Zilla::Plugin::Test::EOL
+      config:
+        Dist::Zilla::Plugin::Test::EOL:
+          filename: t/eol.t
       name: Test::EOL
       version: ~
     -

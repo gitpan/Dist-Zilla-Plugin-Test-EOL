@@ -130,6 +130,7 @@ do { my $x = {
                                    'Path::Tiny' => '0',
                                    'Test::DZil' => '0',
                                    'Test::Deep' => '0',
+                                   'Test::EOL' => '0',
                                    'Test::More' => '0',
                                    'if' => '0'
                                  }

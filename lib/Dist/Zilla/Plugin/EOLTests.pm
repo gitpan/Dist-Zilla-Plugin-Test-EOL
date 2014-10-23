@@ -1,38 +1,21 @@
 use strict;
 use warnings;
 package Dist::Zilla::Plugin::EOLTests;
-# ABSTRACT: Release tests making sure correct line endings are used
-$Dist::Zilla::Plugin::EOLTests::VERSION = '0.13';
+# ABSTRACT: (DEPRECATED) Release tests making sure correct line endings are used
+$Dist::Zilla::Plugin::EOLTests::VERSION = '0.14';
 use Moose;
+extends 'Dist::Zilla::Plugin::Test::EOL';
 use namespace::autoclean;
 
-# VERSION
-
-extends 'Dist::Zilla::Plugin::Test::EOL';
-
-#pod =head1 DESCRIPTION
-#pod
-#pod This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
-#pod the following files:
-#pod
-#pod =for :list
-#pod * xt/release/eol.t
-#pod a standard Test::EOL test
-#pod
-#pod =attr trailing_whitespace
-#pod
-#pod If this option is set to a true value,
-#pod C<< { trailing_whitespace => 1 } >> will be passed to
-#pod L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
-#pod
-#pod =cut
+before register_component => sub {
+    warn "!!! [EOLTests] is deprecated and may be removed in a future release; replace it with [Test::EOL] (note the different default filename)\n";
+};
 
 has '+filename' => (
     default => sub { return 'xt/release/eol.t' },
 );
 
 __PACKAGE__->meta->make_immutable;
-
 1;
 
 __END__
@@ -43,34 +26,29 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Plugin::EOLTests - Release tests making sure correct line endings are used
+Dist::Zilla::Plugin::EOLTests - (DEPRECATED) Release tests making sure correct line endings are used
 
 =head1 VERSION
 
-version 0.13
+version 0.14
+
+=head1 SYNOPSIS
+
+In your F<dist.ini>:
+
+    [EOLTests]
 
 =head1 DESCRIPTION
 
-This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
-the following files:
+This is a plugin that runs at the L<gather files|Dist::Zilla::Role::FileGatherer> stage,
+providing the file F<xt/release/eol.t>, a standard L<Test::EOL> test.
 
-=over 4
+THIS MODULE IS DEPRECATED. Please use
+L<Dist::Zilla::Plugin::Test::EOL> instead. it may be removed at a
+later time (but not before April 2015).
 
-=item *
-
-xt/release/eol.t
-
-a standard Test::EOL test
-
-=back
-
-=head1 ATTRIBUTES
-
-=head2 trailing_whitespace
-
-If this option is set to a true value,
-C<< { trailing_whitespace => 1 } >> will be passed to
-L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
+In the meantime, it will continue working -- although with a warning.
+Refer to the replacement for the full documentation.
 
 =head1 BUGS
 

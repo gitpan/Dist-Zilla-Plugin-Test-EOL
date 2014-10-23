@@ -95,10 +95,11 @@ my %WriteMakefileArgs = (
     "Path::Tiny" => 0,
     "Test::DZil" => 0,
     "Test::Deep" => 0,
+    "Test::EOL" => 0,
     "Test::More" => 0,
     "if" => 0
   },
-  "VERSION" => "0.13",
+  "VERSION" => "0.14",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -119,6 +120,7 @@ my %FallbackPrereqs = (
   "Sub::Exporter::ForMethods" => 0,
   "Test::DZil" => 0,
   "Test::Deep" => 0,
+  "Test::EOL" => 0,
   "Test::More" => 0,
   "if" => 0,
   "namespace::autoclean" => 0,

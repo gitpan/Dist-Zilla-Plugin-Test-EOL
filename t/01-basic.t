@@ -15,6 +15,7 @@ my $tzil = Builder->from_config(
             path(qw(source dist.ini)) => simple_ini(
                 [ GatherDir => ],
                 [ ExecDir => ],
+                [ MetaConfig => ],
                 [ 'Test::EOL' ],
             ),
             path(qw(source lib Foo.pm)) => <<'MODULE',
@@ -31,7 +32,7 @@ $tzil->chrome->logger->set_debug(1);
 $tzil->build;
 
 my $build_dir = path($tzil->tempdir)->child('build');
-my $file = $build_dir->child(qw(xt author test-eol.t));
+my $file = $build_dir->child(qw(xt author eol.t));
 ok( -e $file, $file . ' created');
 
 my $content = $file->slurp_utf8;
@@ -49,7 +50,20 @@ cmp_deeply(
                 },
             },
         },
-        # TODO: x_Dist_Zilla
+        x_Dist_Zilla => superhashof({
+            plugins => supersetof(
+                {
+                    class => 'Dist::Zilla::Plugin::Test::EOL',
+                    config => {
+                        'Dist::Zilla::Plugin::Test::EOL' => {
+                            filename => 'xt/author/eol.t',
+                        },
+                    },
+                    name => 'Test::EOL',
+                    version => ignore,
+                },
+            ),
+        }),
     }),
     'prereqs are properly injected for the develop phase',
 ) or diag 'got distmeta: ', explain $tzil->distmeta;
