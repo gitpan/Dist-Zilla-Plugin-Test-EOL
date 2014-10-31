@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 package Dist::Zilla::Plugin::Test::EOL;
-# git description: 0.13-6-g2cbf661
-$Dist::Zilla::Plugin::Test::EOL::VERSION = '0.14';
+# git description: 0.14-4-g1c9c252
+$Dist::Zilla::Plugin::Test::EOL::VERSION = '0.15';
 
 use Moose;
 use Sub::Exporter::ForMethods 'method_installer';
@@ -130,7 +130,7 @@ Dist::Zilla::Plugin::Test::EOL - Author tests making sure correct line endings a
 
 =head1 VERSION
 
-version 0.14
+version 0.15
 
 =head1 DESCRIPTION
 

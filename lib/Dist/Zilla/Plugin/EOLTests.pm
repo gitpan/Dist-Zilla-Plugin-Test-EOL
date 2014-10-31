@@ -2,13 +2,15 @@ use strict;
 use warnings;
 package Dist::Zilla::Plugin::EOLTests;
 # ABSTRACT: (DEPRECATED) Release tests making sure correct line endings are used
-$Dist::Zilla::Plugin::EOLTests::VERSION = '0.14';
+$Dist::Zilla::Plugin::EOLTests::VERSION = '0.15';
 use Moose;
 extends 'Dist::Zilla::Plugin::Test::EOL';
 use namespace::autoclean;
 
 before register_component => sub {
-    warn "!!! [EOLTests] is deprecated and may be removed in a future release; replace it with [Test::EOL] (note the different default filename)\n";
+    warnings::warnif('deprecated',
+        "!!! [EOLTests] is deprecated and may be removed in a future release; replace it with [Test::EOL] (note the different default filename)\n",
+    );
 };
 
 has '+filename' => (
@@ -30,7 +32,7 @@ Dist::Zilla::Plugin::EOLTests - (DEPRECATED) Release tests making sure correct l
 
 =head1 VERSION
 
-version 0.14
+version 0.15
 
 =head1 SYNOPSIS
 

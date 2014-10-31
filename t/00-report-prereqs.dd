@@ -2,12 +2,13 @@ do { my $x = {
        'configure' => {
                         'requires' => {
                                         'ExtUtils::MakeMaker' => '0',
-                                        'Module::Build::Tiny' => '0.039'
+                                        'Module::Build::Tiny' => '0.039',
+                                        'perl' => '5.006'
                                       }
                       },
        'develop' => {
                       'recommends' => {
-                                        'Dist::Zilla::PluginBundle::Author::ETHER' => '0.076'
+                                        'Dist::Zilla::PluginBundle::Author::ETHER' => '0.078'
                                       },
                       'requires' => {
                                       'Dist::Zilla' => '5',
@@ -132,7 +133,8 @@ do { my $x = {
                                    'Test::Deep' => '0',
                                    'Test::EOL' => '0',
                                    'Test::More' => '0',
-                                   'if' => '0'
+                                   'Test::Warnings' => '0.009',
+                                   'perl' => '5.006'
                                  }
                  }
      };
