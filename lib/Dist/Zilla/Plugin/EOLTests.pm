@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Dist::Zilla::Plugin::EOLTests;
 # ABSTRACT: (DEPRECATED) Release tests making sure correct line endings are used
-$Dist::Zilla::Plugin::EOLTests::VERSION = '0.15';
+$Dist::Zilla::Plugin::EOLTests::VERSION = '0.16';
 use Moose;
 extends 'Dist::Zilla::Plugin::Test::EOL';
 use namespace::autoclean;
@@ -32,7 +32,7 @@ Dist::Zilla::Plugin::EOLTests - (DEPRECATED) Release tests making sure correct l
 
 =head1 VERSION
 
-version 0.15
+version 0.16
 
 =head1 SYNOPSIS
 

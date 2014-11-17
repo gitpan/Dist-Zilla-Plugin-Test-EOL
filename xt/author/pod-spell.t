@@ -29,6 +29,6 @@ lib
 Dist
 Zilla
 Plugin
-EOLTests
 Test
 EOL
+EOLTests
